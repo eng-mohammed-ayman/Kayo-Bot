@@ -1,0 +1,21 @@
+# Local credentials and environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+# Data, model artifacts and generated output
+*.csv
+*.xlsx
+*.h5
+*.keras
+*.pkl
+*.pickle
+*.joblib
+*.pdf
+*.pptx
+outputs/
