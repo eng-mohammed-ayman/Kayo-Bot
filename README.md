@@ -16,7 +16,7 @@ The supplied README points to the original team repository, `Abdelrhman-T/ChatBo
 
 ## Status
 
-Source code for the chatbot. The team reported a BLEU score of 84.3 on its test set, and the project was awarded as one of the top projects in the DEPI program. The trained model and processed dataset are not committed to this repository, and the original Azure deployment is no longer live.
+Source code for the chatbot. The team reported a BLEU score of 84.3% on its test set, and the project was awarded as one of the top projects in the DEPI program. The trained model and processed dataset are not committed to this repository, and the original Azure deployment is no longer live.
 
 ## Local setup
 
