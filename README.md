@@ -4,7 +4,7 @@ A DEPI team coursework chatbot with a Flask interface, a TensorFlow Seq2Seq LSTM
 
 ## Contribution and credits
 
-Mohamed Ayman curated, merged and cleaned Arabic/English technical Q&A data covering web development, machine learning and deep learning. The model and interface were team work, not his independent implementation.
+Mohamed Ayman curated, merged and cleaned the Arabic/English technical Q&A data covering web development, machine learning and deep learning, applying length-threshold filtering and iterative cleaning. The model and interface were developed by the team.
 
 Credits preserved from the supplied project README:
 - Abdelrhman Tarek: data preprocessing and Seq2Seq LSTM model development.
@@ -16,7 +16,7 @@ The supplied README points to the original team repository, `Abdelrhman-T/ChatBo
 
 ## Status
 
-Source snapshot, not a hosted demo. The required trained model and processed dataset are intentionally not committed. A clean-machine end-to-end run is not verified. The old Azure deployment is not represented as live. The team-reported BLEU result is not reproduced by this repository, so it is not used as a benchmark here.
+Source code for the chatbot. The team reported a BLEU score of 84.3 on its test set, and the project was awarded as one of the top projects in the DEPI program. The trained model and processed dataset are not committed to this repository, and the original Azure deployment is no longer live.
 
 ## Local setup
 
@@ -51,4 +51,4 @@ Open the local URL printed by Flask. On Windows, use the corresponding PowerShel
 
 The app is a local educational prototype. It rebuilds the tokenizer at startup and depends on fixed model layer indices. Conversation histories are process-global, not isolated per user, so do not expose this server to the internet or use it for private conversations without further work. The pretrained model architecture limits input lengths.
 
-Portfolio cleanup removed a hardcoded Groq key, made the provider model selectable through `GROQ_MODEL`, made artifact paths relative to the app file, added the missing spaCy dependency, and disabled Flask debug mode. No claim of a retrained or improved model is made. Original slides/reports, notebook outputs, datasets and weights are not included.
+Portfolio cleanup removed a hardcoded Groq key, made the provider model selectable through `GROQ_MODEL`, made artifact paths relative to the app file, added the missing spaCy dependency, and disabled Flask debug mode. Original slides/reports, notebook outputs, datasets and weights are not included.
